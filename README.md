@@ -1,15 +1,19 @@
 # USB Access Control System
 
-A secure USB device access control system using Finite State Machine (FSM) for managing USB device lifecycle with certificate-based authentication for storage devices.
+### 🔒 Introduction
 
-## Security Features
+USB Access Control is a secure framework designed to regulate and monitor the lifecycle of USB storage devices.
+The system leverages a Finite State Machine (FSM) for lifecycle management and applies certificate-based authentication to ensure only trusted devices gain access.
 
-- **Certificate-based authentication** for USB storage devices
-- **Input validation** to prevent buffer overflows and injection attacks
-- **Path validation** to prevent directory traversal attacks
-- **Configuration management** with environment variable overrides
-- **Graceful shutdown** with signal handling
-- **Memory leak protection** with proper cleanup
+This project aims to mitigate common USB-related security threats such as unauthorized access, data exfiltration, and malware injection.
+
+### 🎯 Key Features
+
+- **Finite State Machine (FSM):** Manages the entire USB device lifecycle (e.g., initialization, authentication, authorization, revocation).
+- **Certificate-Based Authentication:** Enforces cryptographic validation of storage devices using X.509 certificates.
+- **Secure Multi-Threaded Architecture:** Separate threads for FSM execution and USB monitoring with event-driven queues.
+- **Robust Security Mechanisms:** Input validation against buffer overflow & injection attacks, Path canonicalization to prevent directory traversal.
+- **Configurable Runtime Parameters:** Easily managed via environment variables or configuration files.
 
 ### 🏗️ Architecture
 
@@ -17,6 +21,9 @@ A secure USB device access control system using Finite State Machine (FSM) for m
 - **Event-driven architecture** using thread-safe queues
 - **Modular design** with separate concerns for USB handling, FSM, and validation
 - **Configuration management** with fallback defaults
+
+### 🏗️ Architecture Overview
+
 
 #### 📁 Project Structure
 
@@ -60,18 +67,35 @@ usb-access-control/
 └── README.md                     # This file
 ```
 
-### 🔒 Security Considerations
+### ⚙️ Build & Run
+**Dependencies**
+- C compiler (GCC/Clang)
+- CMake ≥ 3.10 or Make
+- OpenSSL (for certificate handling)
+- DBus (for device events)
+**Build (CMake)**
+```
+mkdir build && cd build
+cmake ..
+make
+```
+**Build (Makefile)**
+```
+make
+```
+**Run**
+```
+sudo ./usb-access-control
+```
+### 🔑 Certificate Management
 
-- All file paths are validated against allowed directories
-- Input strings are bounded and validated
-- Certificate data is validated before processing
-- Device properties are validated before use
-- Graceful error handling prevents crashes
 
-## Development
+### 🧪 Testing
+- Plug in a USB storage device
+- Observe lifecycle transitions in logs (FSM state changes)
+- Verify certificate authentication results
+- Attempt unauthorized devices → should be denied
+### 👤 Author
+- Phuc Le Tuan
+- GitHub: whoisLePhuc
 
-This project uses CMake for building. See `CMakeLists.txt` for build configuration.
-
-## License
-
-[Add your license here]
