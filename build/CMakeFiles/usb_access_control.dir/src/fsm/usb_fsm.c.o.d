@@ -44,6 +44,7 @@ CMakeFiles/usb_access_control.dir/src/fsm/usb_fsm.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /home/lephuc/usb-access-control/inc/fsm/usb_fsm.h \
  /home/lephuc/usb-access-control/inc/core/usb_queue.h \
  /usr/include/pthread.h /usr/include/sched.h \

@@ -71,6 +71,7 @@ CMakeFiles/usb_access_control.dir/src/interface/usbguard_interface.c.o: \
  /usr/include/dbus-1.0/dbus/dbus-signature.h \
  /usr/include/dbus-1.0/dbus/dbus-syntax.h \
  /usr/include/dbus-1.0/dbus/dbus-threads.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /home/lephuc/usb-access-control/inc/interface/usbguard_interface.h \
  /home/lephuc/usb-access-control/inc/core/usb_device.h \
  /usr/include/pthread.h /usr/include/sched.h \

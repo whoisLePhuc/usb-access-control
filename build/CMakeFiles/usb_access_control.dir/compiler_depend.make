@@ -133,6 +133,7 @@ CMakeFiles/usb_access_control.dir/main.c.o: ../main.c \
   /usr/include/dbus-1.0/dbus/dbus-signature.h \
   /usr/include/dbus-1.0/dbus/dbus-syntax.h \
   /usr/include/dbus-1.0/dbus/dbus-threads.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   ../inc/config.h \
   ../inc/logger/logger.h \
   ../inc/logger/logger.h
@@ -534,6 +535,7 @@ CMakeFiles/usb_access_control.dir/src/fsm/usb_fsm.c.o: ../src/fsm/usb_fsm.c \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   ../inc/fsm/usb_fsm.h \
   ../inc/core/usb_queue.h \
   /usr/include/pthread.h \
@@ -665,6 +667,7 @@ CMakeFiles/usb_access_control.dir/src/interface/usbguard_interface.c.o: ../src/i
   /usr/include/dbus-1.0/dbus/dbus-signature.h \
   /usr/include/dbus-1.0/dbus/dbus-syntax.h \
   /usr/include/dbus-1.0/dbus/dbus-threads.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   ../inc/interface/usbguard_interface.h \
   ../inc/core/usb_device.h \
   /usr/include/pthread.h \
@@ -1155,6 +1158,8 @@ CMakeFiles/usb_access_control.dir/src/utils/utils.c.o: ../src/utils/utils.c \
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 

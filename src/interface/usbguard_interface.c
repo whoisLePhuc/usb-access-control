@@ -220,6 +220,7 @@ static void usb_manager_close(DBusConnection *conn) {
 
 // Thread function to manage USB events
 void* usb_manager_loop(void *arg){
+    (void)arg;
     DBusConnection *conn = usbguard_init_connection();
     if (!conn) {
         fprintf(stderr, "usbguard_thread: invalid connection\n");

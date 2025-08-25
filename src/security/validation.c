@@ -22,7 +22,6 @@ int validate_string(const char *str, size_t max_len) {
     }
     return 0; // Valid
 }
-
 // Validate an array of usb_property_t structures
 int validate_device_properties(const void *properties, int count, size_t max_count) {
     if (!properties) {
@@ -53,7 +52,6 @@ int validate_device_properties(const void *properties, int count, size_t max_cou
     }
     return 0; // Valid
 }
-
 // Validate device ID is non-zero and within reasonable bounds
 int validate_device_id(unsigned int id) {
     // Device ID should not be 0 (reserved for invalid/unknown)
@@ -66,7 +64,6 @@ int validate_device_id(unsigned int id) {
     }
     return 0; // Valid
 }
-
 // Parse ID string of format "VVVV:PPPP" into vendor_id and product_id
 int validate_file_path(const char *path) {
     if (!path) {
@@ -104,8 +101,7 @@ int validate_file_path(const char *path) {
 }
     return 0; // Valid path
 }
-
-// 
+// Validate certificate data buffer
 int validate_certificate_data(const unsigned char *data, size_t len) {
     if (!data) {
         return -1; // NULL pointer
@@ -122,7 +118,6 @@ int validate_certificate_data(const unsigned char *data, size_t len) {
     }
     return 0; // Valid
 }
-
 // Safe string copy ensuring null termination and no overflow
 int safe_strncpy(char *dst, size_t dst_size, const char *src, size_t src_len) {
     if (!dst || !src || dst_size == 0) {

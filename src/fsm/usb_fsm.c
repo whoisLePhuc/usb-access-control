@@ -38,7 +38,6 @@ static void action_deny_access(usb_device_t *device) {
         logMessage(LOG_WARNING, "[DENY]: USB %u state %s error code %d", device->id, usb_state_name(device->current_state), ret);
     }
     logMessage(LOG_INFO, "[DENY]: Replug USB %u to reconnect", device->id);
-    return ret;
 }
 
 static void action_allow_access_str(usb_device_t *device) {
