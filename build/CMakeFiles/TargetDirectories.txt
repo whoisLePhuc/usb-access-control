@@ -1,3 +1,0 @@
-/home/lephuc/usb-access-control/build/CMakeFiles/usb_access_control.dir
-/home/lephuc/usb-access-control/build/CMakeFiles/edit_cache.dir
-/home/lephuc/usb-access-control/build/CMakeFiles/rebuild_cache.dir
